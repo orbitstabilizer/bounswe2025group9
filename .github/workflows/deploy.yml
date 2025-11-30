@@ -1,9 +1,7 @@
 name: Deploy Nutrihub
 
 on:
-  workflow_run:
-    workflows: [ "Django CI" ]
-    types: [ "completed" ]
+  workflow_dispatch:  # triggers only when manually requested
 
 jobs:
   deploy:
